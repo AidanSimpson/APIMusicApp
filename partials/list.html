@@ -1,0 +1,48 @@
+<ion-header-bar class="bar bar-header bar-dark">
+  <h1 class="title">Rock Artists</h1>
+  <button class="button button-icon icon ion-drag"></button>
+</ion-header-bar>
+
+<ion-content>
+
+<ion-refresher pulling-text="Refresh List" refreshing-text="Loading" on-refresh="artistRefresh()"></ion-refresher>
+
+<img ng-src="img/MainImage.jpg"><!-- Main header image (for mobile/tablet only) -->
+
+  <ion-list><!-- Start Artist List -->
+      <div class="list list-inset"><!-- Start Ionic Search Bar -->
+      <h2 class="hidden">Search Bar</h2>
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search">
+        </label>
+      </div><!-- End Ionic Search Bar -->
+
+    <div class="mainContentBox">
+    <h2 class="hidden">Artist Name List</h2>
+    		<ion-item ng-repeat="artist in artists" class="card">
+    		<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/{{artist.musicbrainz_image_url}}" alt="{{artist.name}}"> -->
+
+    		<h2 class="item-left">{{artist.name}}</h2>
+    		<i class="icon ion-person-stalker"></i>
+
+    		<a class="detailButton item-button-right" href="#details/{{$index}}">
+    		  <button class="button button-positive">Details</button>
+    		</a>
+
+    		</ion-item>
+    </div>
+  </ion-list><!-- End Artist List -->
+
+  <div class="tabs tabs-dark">
+  <h2 class="hidden">Footer Nav</h2>
+    <a class="tab-item">Home</a>
+    <a class="tab-item">My List</a>
+    <a class="tab-item">Favorites</a>
+  </div>
+
+  <ion-footer-bar class="bar bar-dark">
+    <div class="title footerTitle">MusicGraph API</div>
+  </ion-footer-bar>
+
+</ion-content>

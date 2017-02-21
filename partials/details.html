@@ -1,0 +1,42 @@
+<ion-header-bar class="bar bar-header bar-dark">
+	<h1 class="title">Artist Details</h1>
+	<button class="button button-icon icon ion-Favorites"></button>
+</ion-header-bar>
+
+<ion-content>
+
+	<div class="detailContentBox"><!-- Start main detail content -->
+	<h2 class="hidden">Main Artist Detail Container</h2>
+	    <div class="card item-image detailImage">
+	    <h3 class="hidden">Artist Image</h3>
+			<img ng-src="img/{{artistDetail.artistImage}}">
+			<!-- Almost worked... -->
+			<!-- <img ng-src="https://upload.wikimedia.org/wikipedia/commons//7/7a/{{artistDetail.sillyImage}}" alt="Character Image"> -->
+	    </div>
+
+		<div class="card detailText">
+		<h3 class="hidden">Artist Name</h3>
+			<h2 class="item-left item-icon-right">{{artistDetail.name}} <i class="icon-right ion-podium"></i></h2>
+			<!-- <i class="icon ion-music-note"></i> -->
+		</div>
+
+		<div class="card detailText">
+		<h3 class="hidden">Artist Details</h3>
+			<p>Gender: {{artistDetail.gender}}</p>
+			<p>Artist Main Genre: {{artistDetail.main_genre}} <i class="icon-right ion-music-note"></i></p>
+			<p>Country of Origin: {{artistDetail.country_of_origin}}</p>
+		</div>
+	</div><!-- End main detail content -->
+
+</ion-content>
+
+<div class="tabs tabs-dark"><!-- Start Footer Nav -->
+<h2 class="hidden">Footer Nav</h2>
+	<a class="tab-item">Home</a>
+	<a class="tab-item">My List</a>
+	<a class="tab-item">Favorites</a>
+</div><!-- End Footer Nav -->
+
+<ion-footer-bar class="bar bar-dark"><!-- Footer -->
+	<button class="button button-dark icon-left ion-chevron-left" data-ng-click="returnHome()"><span class="homeButton">Home</span></button>
+</ion-footer-bar>

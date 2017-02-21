@@ -1,0 +1,114 @@
+/* Empty. Add your own CSS if you like */
+
+/*General Rules*/
+body
+{
+	background-color: #000000 !important;
+}
+
+a
+{
+	font-size: 12px;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.bar-dark
+{
+	background-color: #7b2fa1 !important;
+}
+
+
+
+/*Top Styles*/
+.title
+{
+	font-weight: 200 !important;
+	font-size: 26px !important;
+	letter-spacing: 1px;
+}
+
+.introText
+{
+	text-align: center;
+}
+
+.header-bar, .tabs-dark
+{
+	background-color: #7b2fa1 !important;
+}
+
+
+
+/*Main Content Styles*/
+.list
+{
+	background-color: #efefef !important;
+}
+
+.button-positive
+{
+	margin-top: 15px !important;
+	font-size: 14px !important;
+	background-color: #7b2fa1 !important;
+}
+
+.card
+{
+	margin-top: 20px !important;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+.ion-chevron-left
+{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+.homeButton
+{
+	padding-left: 10px !important;
+}
+
+.mainContentBox
+{
+	margin-bottom: 120px;
+}
+
+.detailContentBox
+{
+	margin-bottom: 85px !important;
+	background-color: #efefef !important;
+}
+
+.detailText
+{
+	padding-left: 15px;
+}
+
+.detailImage img
+{
+	max-width: 100%;
+}
+
+
+
+/*Footer Styles*/
+.homeButton
+{
+	padding-left: 10px !important;
+}
+
+.tabs
+{
+	margin-bottom: 40px;
+}
+
+.footerTitle
+{
+	font-size: 14px !important;
+}
