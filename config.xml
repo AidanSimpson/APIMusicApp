@@ -6,7 +6,7 @@
         id        = "com.aidansimpson.rockartistapp"
         version   = "1.0.0">
 
-    <name>MUSICGRAPH API Rock Artists</name>
+    <name>Rock Artist MusicGraph API</name>
 
     <description>
         An application that lists artists and their details and responds to the deviceready event.
